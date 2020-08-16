@@ -151,8 +151,6 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
-  # that takes in an argument of the team name and
-  # returns an `Array` of that team's colors.
   game_hash.each do | team, team_attributes|
     if team_attributes[:team_name] == team_name
       return team_attributes[:colors]
@@ -168,10 +166,18 @@ def team_names
   team_names
 end
 
-def player_numbers
+def player_numbers(team_name)
   # that takes in an argument of a team name and
   # returns an `Array` of the jersey numbers for that team.
-
+  jersey_numbers = []
+  game_hash.each do | team, team_attributes|
+    if team_attributes[:team_name] == team_name
+      team_attributes[:players].each do | i |
+        jersey_numbers << i[:number]
+      end   
+    end
+  end
+  jersey_numbers
 end
 
 def big_shoe_rebounds
