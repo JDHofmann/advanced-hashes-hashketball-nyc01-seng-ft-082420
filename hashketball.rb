@@ -125,5 +125,7 @@ def game_hash
     }
   }
 end
-
-# Write code here
+def num_points_scored
+  #that takes in an argument of a player's
+    #name and returns the number of points scored for that player
+end
