@@ -193,7 +193,7 @@ def most_points_scored
     team_attributes[:players].each do |i|
       if player_with_most_points == {}
         player_with_most_points = i
-      elsif i[:shoe] > player_with_most_points[:points]
+      elsif i[:points] > player_with_most_points[:points]
         player_with_most_points = i
       end
     end
