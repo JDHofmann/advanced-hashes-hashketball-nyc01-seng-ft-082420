@@ -160,6 +160,7 @@ def team_names
   # `Array` of the team names.
   team_names = []
   game_hash.each do | team, team_attributes|
+    binding.pry
     team_names << team_attributes[:team_name]
   end
 end
