@@ -189,8 +189,7 @@ def big_shoe_rebounds
       elsif i[:shoe] > player_with_largest_shoe[:shoe]
         player_with_largest_shoe = i
       end
-      binding.pry
-
     end
   end
+  player_with_largest_shoe[:rebounds]
 end
