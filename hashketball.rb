@@ -135,7 +135,7 @@ def player_stats(player_name)
   game_hash.each do | team, players|
 
     team[:players].each do | i |
-      puts i[:player_name]
+      i[:player_name]
       binding.pry
 
     end
