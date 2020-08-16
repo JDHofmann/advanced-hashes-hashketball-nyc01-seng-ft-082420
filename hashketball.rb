@@ -130,7 +130,7 @@ end
 def player_stats(player_name)
   # that takes in an argument of a player's name
   # and returns a hash of that player's stats.
-  # binding.pry
+  binding.pry
 
   game_hash.each do | team, players|
 
