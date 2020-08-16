@@ -142,11 +142,6 @@ def num_points_scored(player_name)
 end
 
 def shoe_size(player_name)
-  # that takes in an argument of a player's name and
-  #returns the shoe size for that player.
-  # Think about how you will find the shoe size of the correct player. How can
-  #   you check and see if a player's name matches the name that has been passed
-  #   into the method as an argument?
   player_stats(player_name)[:shoe]
 end
 
@@ -186,5 +181,5 @@ def big_shoe_rebounds
   #   * First, find the player with the largest shoe size
   #   * Then, return that player's number of rebounds
   #   * Remember to think about return values here.
-  
+
 end
