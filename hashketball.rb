@@ -136,6 +136,8 @@ def player_stats(player_name)
 
     team[:players].each do | i |
       puts i[:player_name]
+      binding.pry
+
     end
   end
 end
@@ -177,4 +179,3 @@ def big_shoe_rebounds
   #   * Then, return that player's number of rebounds
   #   * Remember to think about return values here.
 end
-binding.pry
