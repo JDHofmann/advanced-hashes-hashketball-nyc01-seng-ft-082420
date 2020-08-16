@@ -150,17 +150,19 @@ def shoe_size(player_name)
   player_stats(player_name)[:shoe]
 end
 
-def team_colors
+def team_colors(team_name)
   # that takes in an argument of the team name and
   # returns an `Array` of that team's colors.
+  game_hash.each do | team, team_attributes|
+    if team_attributes[:team_name] == team_name
+
+    end 
+  end
 end
 
 def team_names
-# that operates on the game `Hash` to return an
-  # `Array` of the team names.
   team_names = []
   game_hash.each do | team, team_attributes|
-    # binding.pry
     team_names << team_attributes[:team_name]
   end
   team_names
