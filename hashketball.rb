@@ -155,7 +155,7 @@ def team_colors(team_name)
   # returns an `Array` of that team's colors.
   game_hash.each do | team, team_attributes|
     if team_attributes[:team_name] == team_name
-      binding.pry 
+      return team_attributes[:colors]
     end
   end
 end
