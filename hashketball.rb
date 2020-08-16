@@ -188,5 +188,16 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-
+  player_with_most_points = {}
+  game_hash.each do | team, team_attributes|
+    team_attributes[:players].each do |i|
+      if player_with_most_points == {}
+        player_with_most_points = i
+      elsif i[:shoe] > player_with_most_points[:points]
+        player_with_most_points = i
+      end
+    end
+  end
+  player_with_largest_shoe[:player_name]
+  binding.pry 
 end
