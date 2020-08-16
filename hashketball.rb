@@ -138,10 +138,7 @@ def player_stats(player_name)
 end
 
 def num_points_scored(player_name)
-  # binding.pry
   player_stats(player_name)[:points]
-  #that takes in an argument of a player's
-    #name and returns the number of points scored for that player
 end
 
 def shoe_size(player_name)
@@ -150,6 +147,7 @@ def shoe_size(player_name)
   # Think about how you will find the shoe size of the correct player. How can
   #   you check and see if a player's name matches the name that has been passed
   #   into the method as an argument?
+  player_stats(player_name)[:shoe]
 end
 
 def team_colors
