@@ -138,7 +138,7 @@ def player_stats(player_name)
 end
 
 def num_points_scored(player_name)
-  binding.pry
+  # binding.pry
   player_stats(player_name)[:points]
   #that takes in an argument of a player's
     #name and returns the number of points scored for that player
