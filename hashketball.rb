@@ -163,6 +163,8 @@ end
 def player_numbers
   # that takes in an argument of a team name and
   # returns an `Array` of the jersey numbers for that team.
+  player_stats(player_name)[:number]
+
 end
 
 def big_shoe_rebounds
