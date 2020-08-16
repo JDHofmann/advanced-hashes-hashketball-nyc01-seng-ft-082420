@@ -158,12 +158,15 @@ end
 def team_names
 # that operates on the game `Hash` to return an
   # `Array` of the team names.
+  team_names = []
+  game_hash.each do | team, team_attributes|
+    team_names << team_attributes[:team_name]
+  end
 end
 
 def player_numbers
   # that takes in an argument of a team name and
   # returns an `Array` of the jersey numbers for that team.
-  player_stats(player_name)[:number]
 
 end
 
