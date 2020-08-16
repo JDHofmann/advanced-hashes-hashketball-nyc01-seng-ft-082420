@@ -167,14 +167,12 @@ def team_names
 end
 
 def player_numbers(team_name)
-  # that takes in an argument of a team name and
-  # returns an `Array` of the jersey numbers for that team.
   jersey_numbers = []
   game_hash.each do | team, team_attributes|
     if team_attributes[:team_name] == team_name
       team_attributes[:players].each do | i |
         jersey_numbers << i[:number]
-      end   
+      end
     end
   end
   jersey_numbers
