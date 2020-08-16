@@ -1,4 +1,5 @@
 # Write your code below game_hash
+require 'pry'
 def game_hash
   {
     home: {
@@ -125,19 +126,25 @@ def game_hash
     }
   }
 end
+
 def player_stats(player_name)
   # that takes in an argument of a player's name
   # and returns a hash of that player's stats.
+  # binding.pry
 
-game_hash.each do | team, players|
-  
+  game_hash.each do | team, players|
+
+    team[:players].each do | i |
+      puts i[:player_name]
+    end
+  end
 end
 
-end
 def num_points_scored(player_name)
   #that takes in an argument of a player's
     #name and returns the number of points scored for that player
 end
+
 def shoe_size(player_name)
   # that takes in an argument of a player's name and
   #returns the shoe size for that player.
@@ -145,14 +152,17 @@ def shoe_size(player_name)
   #   you check and see if a player's name matches the name that has been passed
   #   into the method as an argument?
 end
+
 def team_colors
   # that takes in an argument of the team name and
   # returns an `Array` of that team's colors.
 end
+
 def team_names
 # that operates on the game `Hash` to return an
   # `Array` of the team names.
 end
+
 def player_numbers
   # that takes in an argument of a team name and
   # returns an `Array` of the jersey numbers for that team.
@@ -167,3 +177,4 @@ def big_shoe_rebounds
   #   * Then, return that player's number of rebounds
   #   * Remember to think about return values here.
 end
+binding.pry
