@@ -131,8 +131,8 @@ def player_stats(player_name)
 
 game_hash.each do | team, players|
   
-end 
-  
+end
+
 end
 def num_points_scored(player_name)
   #that takes in an argument of a player's
@@ -148,21 +148,21 @@ end
 def team_colors
   # that takes in an argument of the team name and
   # returns an `Array` of that team's colors.
-end 
+end
 def team_names
 # that operates on the game `Hash` to return an
   # `Array` of the team names.
 end
-def player_numbers 
+def player_numbers
   # that takes in an argument of a team name and
   # returns an `Array` of the jersey numbers for that team.
-end 
+end
 
-def big_shoe_rebounds 
+def big_shoe_rebounds
   # that will return the number of rebounds
   #   associated with the player that has the largest shoe size. Break this one down
   #   into steps:
-  # 
+  #
   #   * First, find the player with the largest shoe size
   #   * Then, return that player's number of rebounds
   #   * Remember to think about return values here.
