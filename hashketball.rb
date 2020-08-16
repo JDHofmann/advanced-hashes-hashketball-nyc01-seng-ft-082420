@@ -134,7 +134,10 @@ def player_stats(player_name)
   game_hash.each do | team, team_attributes|
     # binding.pry
     team_attributes[:players].each do |i|
-      binding.pry
+      # binding.pry
+      if i[:player_name] == player_name
+        return i
+      end
     end
   end
 end
