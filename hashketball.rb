@@ -128,13 +128,8 @@ def game_hash
 end
 
 def player_stats(player_name)
-  # that takes in an argument of a player's name
-  # and returns a hash of that player's stats.
-
   game_hash.each do | team, team_attributes|
-    # binding.pry
     team_attributes[:players].each do |i|
-      # binding.pry
       if i[:player_name] == player_name
         return i
       end
