@@ -199,5 +199,4 @@ def most_points_scored
     end
   end
   player_with_largest_shoe[:player_name]
-  binding.pry 
 end
